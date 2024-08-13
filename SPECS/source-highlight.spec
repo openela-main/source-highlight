@@ -1,7 +1,7 @@
 Summary: Produces a document with syntax highlighting
 Name: source-highlight
 Version: 3.1.8
-Release: 17%{?dist}
+Release: 18%{?dist}
 Group: Development/Tools
 License: GPLv3+
 Source0: ftp://ftp.gnu.org/gnu/src-highlite/%{name}-%{version}.tar.gz
@@ -99,6 +99,9 @@ fi
 %{_includedir}/srchilite/*.h
 
 %changelog
+* Mon May 27 2024 Tomas Popela <tpopela@redhat.com> - 3.1.8-18
+- Rebuild for shipping devel subpackage in CRB (RHEL-38616)
+
 * Mon Nov 02 2020 Felipe Borges <feborges@redhat.com> - 3.1.8-17
 - Add boost-devel dependecy to devel package (#1718480)
 
