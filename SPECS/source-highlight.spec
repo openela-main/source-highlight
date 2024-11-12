@@ -1,7 +1,7 @@
 Summary: Produces a document with syntax highlighting
 Name: source-highlight
 Version: 3.1.9
-Release: 11%{?dist}
+Release: 12%{?dist}
 License: GPLv3+
 Source0: ftp://ftp.gnu.org/gnu/src-highlite/%{name}-%{version}.tar.gz
 Source1: ftp://ftp.gnu.org/gnu/src-highlite/%{name}-%{version}.tar.gz.sig
@@ -87,6 +87,9 @@ rmdir $RPM_BUILD_ROOT%{_sysconfdir}/bash_completion.d
 %{_includedir}/srchilite/*.h
 
 %changelog
+* Tue Jul 16 2024 Keith Seitz <keiths@redhat.com> 3.1.9-12
+- Rebuild for shipping devel subpackage in CRB
+
 * Tue Aug 10 2021 Mohan Boddu <mboddu@redhat.com> - 3.1.9-11
 - Rebuilt for IMA sigs, glibc 2.34, aarch64 flags
   Related: rhbz#1991688
